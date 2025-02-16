@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(231, 229, 229);
+    background-image: radial-gradient();  
+    
+ 
+}
+h1{
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration: dotted;}
+
+#upload-pic{
+    width: 140px;
+    height: 140px;
+    border: 20px;
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: black;
+}
+h4{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    font-size: 15px;
+    font-family: cursive;
+    border-spacing: 1.1em;
+    
+}
+fieldset{
+    background-color: rgb(221, 243, 193);
+    width: 1150px;
+    
+}
+label{
+    display: block;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    font-size: 1.1em; 
+}
+textarea{
+    border-radius: 10px;
+    border-color:black;
+}
+#data1{
+    text-shadow: 10px;
+    font-family: cursive;
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+    
+}
+
+.container2{
+    height: 1150px auto;
+    width: 800px;
+    background-color: rgb(245, 235, 238);
+    box-shadow: 15px 7px 15px 7px rgb(70, 69, 69);
+    margin: 20px auto;
+    display: none;
+}
+h2{
+    background-color: white;
+    width: 800px;
+    height: 30px;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(100,12,41);
+}
+.l1{
+    display: block;
+    background-color:brown;
+    color: black;
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 3px;
+    text-align: center;
+    
+}
+#done{
+    display: block;
+    background-color:brown;
+    color:black;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+}
+#input-file{
+    display: none;
+}
+.container{
+    display: none;
+}
+.main{
+    display: block;
+    background-color:rgb(38, 170, 115);
+    color:black;
+    width: 800px;
+    height: 300px auto;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+    margin-top: 200px;  
+}
+
+.buttons{
+    display: block;
+    background-color:rgb(241, 108, 31);
+    color:black;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 6px auto;
+    margin-bottom: 20px;
+}
+.page{
+font-size: 20px;
+font-family: cursive;
+}
