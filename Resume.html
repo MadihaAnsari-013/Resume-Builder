@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AddStyles.css"/>
+    <title>ResumeGenerator</title>
+    <style type="text/css">
+      input{border-radius: 5px;}
+      .show{color: brown;font-size: 25px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration: underline;}
+      .text-secondary{font-family: cursive;text-decoration: underline;font-weight: bold;}
+      .color{background-color:rgb(100, 12, 41);width: 800px;height: 250px auto;}
+      #data2{color: white;border-spacing: 20px;}
+      #data3{color: white;}
+      #data4{color: white};
+      h3{font-family:sans-serif;font-weight: bold;font-variant: normal;} 
+      
+         
+</style>
+</head>
+<body class="init">
+  <script src="Scripting.js"></script>
+  <div class="main" id="load">
+    <h4>ONLINE RESUME BUILDER</h4>
+    <h1 class="page"><u>Hello ACHIEVERS</u>....<br>Welcome to the Online Resume Generator page<br>Forget spending hours formatting
+    your resume,or choosing complimentary fonts for your cover letter.</h1>
+    <button type="submit" onclick="showNext()" class="buttons">Click me !!<br>And fill your details..</button>
+  </div>
+  <div class="container" id="resume">
+ <center><h1><u>Online Resume Builder</u></h1></center>
+                <h1 class="show">Fill your details</h1>
+                <fieldset>
+                  <h1 class="show">Select Profile</h1><br>
+                 <!-- <button type="submit" id="done" onclick="addimage()"><b>click to add image</b></button>-->
+                  <label for="input-file" class="l1" onclick="addimage()">Upload Profile</label>
+                  <input type="file" id="input-file" accept="image/*"><br>
+                </fieldset>
+                <br>
+               <fieldset>
+  <h1 class="show"><u>Personal Details</u></h1>
+    
+                <label for="name">NAME :</label><br>
+                <input type="text" id="name" placeholder="Enter here"><br><br>
+
+                <label for="email">EMAIL :</label><br>
+                <input type="email" id="email" placeholder="Enter here"><br><br>
+
+                <label for="phone">PHONE :</label><br>
+                <input type="tel" id="phone" placeholder="Enter here"><br><br>
+
+                <label for="address">ADDRESS :</label><br>
+                <textarea id="add" placeholder="Enter here" rows="5"></textarea><br><br>
+              
+              </fieldset>
+                <br>
+                <fieldset>
+                <h1 class="show"><u>Educational Qualification</u></h1><br>
+                
+                <label for="school">SCHOOL :</label><br>
+                <input type="text" id="education1" placeholder="Enter here"><br><br>
+
+                <label for="degree1"> UNDER GRADUATION :</label><br>
+                <input type="text" id="education2" placeholder="Enter here"><br><br>
+
+                <label for="degree2"> POST GRADUATION :</label><br>
+                <input type="text" id="education3" placeholder="Enter here"><br><br>
+              </fieldset>
+              <br>
+              <fieldset>
+                <h1 class="show">Skills</h1>
+                  <input type="text" id="addskills1" placeholder="Enter here"><br><br>
+                  <input type="text" id="addskills2" placeholder="Enter here"><br><br>
+                  <input type="text" id="addskills3" placeholder="Enter here">
+                <br><br>
+
+              </fieldset>
+              <br>
+              <fieldset>
+                <h1 class="show">Work Experience</h1>
+                <textarea name="Experience" id="experience" placeholder="Enter here"></textarea><br><br>
+              </fieldset>
+              <br>
+                <fieldset>
+                <h1 class="show">Objective</h1>
+                <textarea name="Objective" id="objective" placeholder="Enter here"></textarea><br><br>
+              </fieldset>
+              <br>
+              <fieldset>
+              <h1 class="show">Declaration</h1>
+                <textarea name="declaration" id="decl" placeholder="Enter here"></textarea><br>
+                </fieldset>
+                <br>
+                <p class="text-secondary" my-3>Important links</p>
+                
+                <label for="Fbook">FACEBOOK :</label><br>
+                <input type="text" id="fbook" placeholder="Enter here"><br><br>
+
+                <label for="git">GITHUB :</label><br>
+                <input type="text" id="git" placeholder="Enter here"><br><br>
+
+                <label for="linkedin">LINKEDIN :</label><br>
+                <input type="text" id="linkedin" placeholder="Enter here"><br>
+                <hr>
+                <center><button type="submit" onclick="createResume()">PRESS THE BUTON TO GENERATE THE RESUME</button></center>
+                <hr>
+  </div>
+
+  <div class="container2" id="template">
+    <div class="content" id="resume-content"></div>
+    <center>
+    <div class="color">
+        <div id="imag1">
+          <img src="" alt="" id="upload-pic">
+        </div>
+        <h3 id="data1"></h3>
+        <u><h3>Contact</h3></u>
+        <p id="data2"></p>
+        <p id="data3"></p>
+        <p id="data4"></p>
+        </div>
+        </center>
+        <h2>Educational Qualification</h2>
+        <p id="edu1"></p>
+        <p id="edu2"></p>
+        <p id="edu3"></p>
+        <h2>Skills</h2>
+        <p id="skill1"></p>
+        <p id="skill2"></p>
+        <p id="skill3"></p>
+        <h2>Work Experience</h2>
+        <p id="exp"></p>
+        <h2> Career Objective</h2>
+        <p id="obj"></p>
+        <u><h3>Important Links!!</h3></u>
+        <p id="L1"></p>
+        <p id="L2"></p>
+        <p id="L3"></p>
+        <h2>Declaration</h2>
+        <p id="dec"></p>
+      </div>
+    </div> 
+  </body>
+  </html>
